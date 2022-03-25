@@ -1,0 +1,33 @@
+.mainDiv {
+  position: relative;
+  z-index: 9999;
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-right: 25px;
+  line-height: 40px;
+  border: 1px dashed rgb(230, 230, 240);
+}
+
+#Header {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.hider {
+  display: none;
+}
+
+#innerMainDiv{
+  margin-left: 30px;
+}
+
+code {
+  font-size: 20px;
+}
+
+.cancelButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
