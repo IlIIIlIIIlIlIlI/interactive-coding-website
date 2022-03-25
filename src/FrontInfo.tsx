@@ -57,28 +57,12 @@ const FrontInfo: React.FC = () => {
             You can show any React Component, String, Number or anything else by
             calling the <code>show()</code> function.
             <br />
-            This is a function built into this environment. You may call show
-            function multiple times to <code>show()</code>
-            multiple values.
+            This is a function built into this environment. You may call{" "}
+            <code>show()</code>
+            function multiple times to show multiple values.
           </li>
           <li>
             Re-order or delete cells using the buttons on the top right.&emsp;
-            <button className="button is-rounded is-primary is-small">
-              <span className="icon is-small">
-                <i className="fas fa-plus" />
-              </span>
-              <span>Code</span>
-            </button>
-            &emsp;
-            <button className="button is-rounded is-primary is-small">
-              <span className="icon is-small">
-                <i className="fas fa-plus" />
-              </span>
-              <span>Text</span>
-            </button>
-          </li>
-          <li>
-            Add new cells by hovering on the divider between each cell.&emsp;
             <button className="button is-primary is-small">
               <span className="icon">
                 <i className="fas fa-arrow-up"></i>
@@ -93,6 +77,22 @@ const FrontInfo: React.FC = () => {
               <span className="icon">
                 <i className="fas fa-times"></i>
               </span>
+            </button>
+          </li>
+          <li>
+            Add new cells by hovering on the divider between each cell.&emsp;
+            <button className="button is-rounded is-primary is-small">
+              <span className="icon is-small">
+                <i className="fas fa-plus" />
+              </span>
+              <span>Code</span>
+            </button>
+            &emsp;
+            <button className="button is-rounded is-primary is-small">
+              <span className="icon is-small">
+                <i className="fas fa-plus" />
+              </span>
+              <span>Text</span>
             </button>
           </li>
         </ol>
