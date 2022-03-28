@@ -2,6 +2,28 @@ import React from "react";
 import "./FrontInfo.css";
 
 const FrontInfo: React.FC = () => {
+  const showCode = `show(<h1>Welcome to the Interactive Coding Environment</h1>);`
+  
+  const showCopyCode = () => {
+    navigator.clipboard.writeText(showCode);
+  };
+
+  const sampleCode =
+    `  import React from 'react';
+  import ReactDOM from 'react-dom';
+
+  const App = () => {
+    return <>
+      <h1>Welcome to the Interactive Coding Environment</h1>
+    </>;
+  }
+     
+  ReactDOM.render(<App />, document.querySelector('#root'));`;
+
+  const copyCode = () => {
+    navigator.clipboard.writeText(sampleCode);
+  }
+
   return (
     <div className="mainDiv">
       <h1 id={'Header'}>Interactive Coding Environment</h1>
@@ -60,6 +82,17 @@ const FrontInfo: React.FC = () => {
             This is a function built into this environment. You may call{" "}
             <code>show()</code>
             function multiple times to show multiple values.
+
+            <br />
+
+            <button id='copyButton' className="button is-square is-small" onClick={showCopyCode}>
+              <span className="icon is-small">
+                <i className="fa fa-copy" />
+              </span>
+              <span>Copy Sample Snippet</span>
+            </button>
+            &nbsp;
+            of show() function and Paste it in the following Code Cell.
           </li>
           <li>
             Re-order or delete cells using the buttons on the top right.&emsp;
@@ -94,6 +127,18 @@ const FrontInfo: React.FC = () => {
               </span>
               <span>Text</span>
             </button>
+
+            &emsp;
+            <br />
+
+            <button id='copyButton' className="button is-square is-small" onClick={copyCode}>
+              <span className="icon is-small">
+                <i className="fa fa-copy" />
+              </span>
+              <span>Copy Sample Snippet</span>
+            </button>
+            &nbsp;
+            and Paste it in the following Code Cell.
           </li>
         </ol>
       </div>

@@ -31,3 +31,7 @@ code {
   top: 10px;
   right: 10px;
 }
+
+#copyButton {
+  background-color: rgb(120, 121, 121);
+}
